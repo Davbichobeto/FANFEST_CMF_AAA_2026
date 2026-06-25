@@ -86,11 +86,10 @@
         .icon-svg { width: 14px; height: 14px; fill: #ff8c00; }
         
         /* CUADRÍCULA PERFECTA Y COMPACTA DE ESTADÍSTICAS */
-        .stats-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; padding: 5px 15px; margin-bottom: 5px; }
-        .stat-card { background: #11141a; border: 1px solid #ff8c00; border-radius: 6px; padding: 6px 0; text-align: center; flex: 1 1 calc(33.33% - 8px); min-width: 28%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-        .stat-card.w25 { flex: 1 1 calc(25% - 8px); min-width: 22%; }
-        .stat-card.total { background: #264653; border-color: #264653; }
-        .s-val { display: block; font-size: 15px; font-weight: 900; color: #fff; margin-bottom: 1px; font-family: 'Arial Black', sans-serif;}
+        .stats-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px; padding: 5px 10px; margin-bottom: 5px; }
+.stat-card { background: #11141a; border: 1px solid #ff8c00; border-radius: 6px; padding: 4px 0; text-align: center; flex: 1 1 calc(20% - 6px); min-width: 18%; box-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+.stat-card.total { flex: 1 1 100%; margin-bottom: 4px; }
+.s-val { display: block; font-size: 13px; font-weight: 900; color: #fff; margin-bottom: 1px; font-family: 'Arial Black', sans-serif;}
         .s-lbl { display: block; font-size: 8px; color: #ff8c00; text-transform: uppercase; font-weight: bold; }
         .stat-card.total .s-val, .stat-card.total .s-lbl { color: #fff; }
     </style>
@@ -121,17 +120,22 @@
             </div>
        </div>
 
-        <img src="posteri.jpg" alt="Póster" class="posteri-img">
+        <img src="posteri.jpg" alt="Póster" class="posteri-img" style="max-height: 140px;">
 
         <div class="stats-grid">
-            <div class="stat-card total"><span class="s-val">642</span><span class="s-lbl">Total Elementos</span></div>
-            <div class="stat-card" style="background: #e76f51;"><span class="s-val">18</span><span class="s-lbl" style="color:#fff;">Mandos</span></div>
-            <div class="stat-card" style="background: #2a9d8f;"><span class="s-val">322</span><span class="s-lbl" style="color:#fff;">Fuerza Civil</span></div>
-            
-            <div class="stat-card w25"><span class="s-val">250</span><span class="s-lbl">Cadetes</span></div>
-            <div class="stat-card w25"><span class="s-val">50</span><span class="s-lbl">GAE</span></div>
-            <div class="stat-card w25"><span class="s-val">2</span><span class="s-lbl">K-9 (Canes)</span></div>
-        </div>
+    <div class="stat-card total"><span class="s-val">642</span><span class="s-lbl">Total Elementos</span></div>
+    
+    <div class="stat-card" style="border-color: #455e89;">
+        <span class="s-val" style="font-size: 11px;">🛡️</span>
+        <span class="s-lbl" style="font-size: 7px; color:#fff;">180 1er AGRUP.</span>
+    </div>
+    
+    <div class="stat-card"><span class="s-val">18</span><span class="s-lbl">Mandos</span></div>
+    <div class="stat-card"><span class="s-val">322</span><span class="s-lbl">FC</span></div>
+    <div class="stat-card"><span class="s-val">250</span><span class="s-lbl">Cadetes</span></div>
+    <div class="stat-card"><span class="s-val">50</span><span class="s-lbl">GAE</span></div>
+    <div class="stat-card"><span class="s-val">2</span><span class="s-lbl">K-9</span></div>
+</div>
 
         <a href="https://www.scribblemaps.com/maps/view/FANFEST/oXa3NCajWJ" target="_blank" class="main-menu-btn btn-naranja">Mapa Interactivo</a>
         <a href="#" class="main-menu-btn" onclick="showScreen('directory-screen')">Directorio</a>
